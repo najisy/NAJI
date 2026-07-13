@@ -65,7 +65,7 @@ border-radius: 15px;
 .about{
     width: 95%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 100px auto 40px;
     text-align: right;
 }
 
