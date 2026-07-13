@@ -75,8 +75,9 @@ text-align: right;
 }
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 30px;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 .about h1 {
     font-size: 80px;
