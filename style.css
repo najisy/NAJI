@@ -88,7 +88,7 @@ body {
 .about-line {
     width: 100%;
     border: none;
-    border-top: 10px solid #444;
+    border-top: 5px solid #444;
     margin: 20px 0 50px;
     position: relative;
     right: -15px;
