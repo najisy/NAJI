@@ -81,19 +81,6 @@ body {
     padding: 0;
     min-height: 100vh;
 }
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('background.jpg');
-    background-position: left center;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
 .about h1 {
     font-size: 80px;
     text-align: center;
