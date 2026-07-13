@@ -69,13 +69,13 @@ text-align: right;
 
 }
 .about p {
-    font-size: 70px;
+    font-size: 60px;
     line-height: 2;
     margin: 0;
 }
 body {
     margin: 0;
-    padding: 0 100px;
+    padding: 0 30px;
     min-height: 100vh;
     box-sizing: border-box;
 }
