@@ -106,35 +106,3 @@ body {
     margin: 60px 0;
     flex-wrap: wrap;
 }
-
-.gallery img {
-    width: 800px;
-    border-radius: 15px;
-}
-.profile-image {
-    text-align: center;
-    margin: -0px 0 20px 0;
-}
-.hologram-eye {
-  display: flex;
-  justify-content: center;
-  margin: 40px auto;
-  overflow: hidden;
-}
-
-.hologram-eye img {
-  width: 500px;
-  max-width: 90%;
-  border-radius: 12px;
-  animation: eyeBlink 6s infinite;
-}
-
-@keyframes eyeBlink {
-  0%, 45%, 50%, 100% {
-    transform: scaleY(1);
-  }
-
-  47% {
-    transform: scaleY(0.08);
-  }
-}
