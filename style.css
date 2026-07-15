@@ -79,7 +79,7 @@ text-align: right;
 }
 body {
     margin: 0;
-    padding: 100px 0 35px;
+    padding: 100px 35px 35px;
     min-height: 100vh;
     box-sizing: border-box;
     background: white;
@@ -97,4 +97,43 @@ body {
     border-top: 5px solid #444;
     margin: 20px 0 50px;
     position: relative;
+}
+html,
+body {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.about {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
 }
