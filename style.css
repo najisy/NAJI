@@ -34,7 +34,7 @@ display: inline-block;
     transform: scale(1.08);
     color: #111111;
 }
-.social-icon{
+.social-icon {
     transition: transform 0.8s ease, filter 0.8s ease;
 }
 .social-icon:hover{
@@ -132,8 +132,7 @@ body {
     margin-right: auto;
     justify-content: center;
 }
-
 .gallery img {
-    max-width: 100%;
+    width: 700px;
     height: auto;
 }
