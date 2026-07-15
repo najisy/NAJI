@@ -79,6 +79,7 @@ text-align: right;
 }
 body {
     margin: 0;
+    padding: 100px 35px 35px;
     min-height: 100vh;
     box-sizing: border-box;
     background: white;
