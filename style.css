@@ -140,7 +140,7 @@ body {
   position: relative;
   width: 180px;
   height: 180px;
-  margin: 35px auto;
+  margin: 70px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,8 +148,8 @@ body {
 }
 
 .dark-core {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 
   background:
@@ -173,7 +173,7 @@ body {
 
 .dark-ring {
   position: absolute;
-  width: 300px;
+  width: 500px;
   height: 52px;
   border-radius: 50%;
   border: 1.5px solid rgba(0, 220, 255, 0.9);
