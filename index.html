@@ -8,16 +8,34 @@
 </head>
 <body>
 <header class="top-bar">
-  <button class="nav-btn">☰</button>
 
-  <div class="top-icons">
-<button class="nav-btn" id="searchBtn">🔍</button>
-    <button class="nav-btn" id="themeBtn">🌙</button>
-    <a href="#about" class="nav-btn">👤</a>
-  </div>
+    <div class="top-icons">
+
+        <button class="nav-btn" id="searchBtn">🔍</button>
+
+        <div id="searchBox" class="search-box">
+            <input type="text" placeholder="ابحث..." id="searchInput">
+        </div>
+
+        <button class="nav-btn" id="themeBtn">🌙</button>
+
+        <a href="#about" class="nav-btn">👤</a>
+
+    </div>
+
+    <button class="nav-btn" id="menuBtn">☰</button>
+
 </header>
-<div id="searchBox" class="search-box">
-  <input type="text" placeholder="ابحث..." id="searchInput">
+<div class="menu-content" id="menuContent">
+    <a href="#news">الأخبار</a>
+    <a href="#articles"> المقالات</a>
+    <a href="#services"> الخدمات</a>
+    <a href="#faq"> الأسئلة الشائعة</a>
+    <a href="#updates"> آخر التحديثات</a>
+    <a href="#events"> الفعاليات</a>
+    <a href="#support"> الدعم</a>
+    <a href="#privacy"> سياسة الخصوصية</a>
+    <a href="#terms"> الشروط والأحكام</a>
 </div>
 <div class="content">
 <p align="center">
@@ -103,13 +121,18 @@
   });
   const searchBtn = document.getElementById("searchBtn");
 const searchBox = document.getElementById("searchBox");
-
 searchBtn.addEventListener("click", function () {
-  if (searchBox.style.display === "block") {
+  if (searchBox.style.display === "flex") {
     searchBox.style.display = "none";
   } else {
-    searchBox.style.display = "block";
+    searchBox.style.display = "flex";
   }
+});
+const menuBtn = document.getElementById("menuBtn");
+const menuContent = document.getElementById("menuContent");
+
+menuBtn.addEventListener("click", function () {
+    menuContent.classList.toggle("show");
 });
 </script>
 </body>
