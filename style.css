@@ -260,3 +260,32 @@ body {
 #about {
     scroll-margin-top: 110px;
 }
+body {
+  transition: background-color 0.4s, color 0.4s;
+}
+
+body.dark-mode {
+  background-color: #111;
+  color: white;
+}
+
+body.dark-mode .top-bar {
+  background-color: #1b1b1b;
+  box-shadow: 0 2px 12px rgba(255, 255, 255, 0.12);
+}
+
+body.dark-mode .nav-btn {
+  color: white;
+}
+.search-box {
+  display: none;
+  padding: 10px 15px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}

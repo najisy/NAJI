@@ -11,11 +11,14 @@
   <button class="nav-btn">☰</button>
 
   <div class="top-icons">
-    <button class="nav-btn">🔍</button>
-    <button class="nav-btn">🌙</button>
+<button class="nav-btn" id="searchBtn">🔍</button>
+    <button class="nav-btn" id="themeBtn">🌙</button>
     <a href="#about" class="nav-btn">👤</a>
   </div>
 </header>
+<div id="searchBox" class="search-box">
+  <input type="text" placeholder="ابحث..." id="searchInput">
+</div>
 <div class="content">
 <p align="center">
 <h1 class="naji-name">NAJI</h1>
@@ -86,5 +89,28 @@
 <footer class="footer">
     <p>© 2026 NAJI | جميع الحقوق محفوظة</p>
 </footer>
+<script>
+  const themeBtn = document.getElementById("themeBtn");
+
+  themeBtn.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+      themeBtn.textContent = "☀️";
+    } else {
+      themeBtn.textContent = "🌙";
+    }
+  });
+  const searchBtn = document.getElementById("searchBtn");
+const searchBox = document.getElementById("searchBox");
+
+searchBtn.addEventListener("click", function () {
+  if (searchBox.style.display === "block") {
+    searchBox.style.display = "none";
+  } else {
+    searchBox.style.display = "block";
+  }
+});
+</script>
 </body>
 </html>
