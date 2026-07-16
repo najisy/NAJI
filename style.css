@@ -377,7 +377,7 @@ body.dark-mode .nav-btn {
         width: 220px;
         right: -240px;
         height: calc(100vh - 85px);
-        padding: 20px 12px;
+        padding: 5px 15px;
     }
 
     .menu-content.show {
@@ -386,6 +386,6 @@ body.dark-mode .nav-btn {
 
     .menu-content a {
         font-size: 17px;
-        padding: 11px 13px;
+        padding: 15px 5px;
     }
 }
