@@ -321,26 +321,71 @@ body.dark-mode .nav-btn {
 }
 .menu-content {
     position: fixed;
-    top: 0;
-    right:-800px;
+    top: 100px;
+    right: -280px;
     left: auto;
-    width: 400px;
-    height: 100%;
-    background: white;
-    padding: 120px 20px 20px;
+
+    width: 250px;
+    height: calc(100vh - 100px);
+
+    background: rgba(255, 255, 255, 0.98);
+    padding: 25px 15px;
+
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    transition: right 0.3s ease;
-    z-index: 999;
+    gap: 8px;
+
+    box-sizing: border-box;
+    border-left: 1px solid #e5e5e5;
+    box-shadow: -8px 0 25px rgba(0, 0, 0, 0.10);
+
+    overflow-y: auto;
+    transition: right 0.35s ease;
+    z-index: 9998;
 }
 
 .menu-content.show {
     right: 0;
 }
+
 .menu-content a {
-    color: black;
+    display: block;
+
+    color: #111;
     text-decoration: none;
-    font-size: 80px;
-    margin-bottom: 100px;
+    text-align: right;
+
+    font-size: 19px;
+    font-weight: 500;
+
+    padding: 12px 15px;
+    margin: 0;
+
+    border-radius: 10px;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.menu-content a:hover,
+.menu-content a:active {
+    background: #f2f2f2;
+    transform: translateX(-4px);
+}
+
+@media (max-width: 600px) {
+    .menu-content {
+        top: 85px;
+        width: 220px;
+        right: -240px;
+        height: calc(100vh - 85px);
+        padding: 20px 12px;
+    }
+
+    .menu-content.show {
+        right: 0;
+    }
+
+    .menu-content a {
+        font-size: 17px;
+        padding: 11px 13px;
+    }
 }
