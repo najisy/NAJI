@@ -237,7 +237,6 @@ body {
     box-sizing: border-box;
 
     z-index: 9999;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .top-icons {
@@ -245,20 +244,35 @@ body {
     align-items: center;
     gap: 70px;
 }
-
 .nav-btn {
-    background: none;
-    border: none;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 0;
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
     color: #000;
     font-size: 28px;
     cursor: pointer;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
 }
-.nav-btn:hover{
-    color:#444;
-    transform:scale(1.1);
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active {
+    background: transparent !important;
+    box-shadow: none !important;
+    filter: none !important;
+    outline: none !important;
+    transform: none !important;
 }
 #about {
     scroll-margin-top: 110px;
@@ -310,10 +324,9 @@ body.dark-mode .nav-btn {
     top: 0;
     right:-800px;
     left: auto;
-    width: 500px;
+    width: 400px;
     height: 100%;
     background: white;
-    box-shadow: -2px 0 15px rgba(0, 0, 0, 0.2);
     padding: 120px 20px 20px;
     display: flex;
     flex-direction: column;
@@ -328,6 +341,6 @@ body.dark-mode .nav-btn {
 .menu-content a {
     color: black;
     text-decoration: none;
-    font-size: 20px;
-    margin-bottom: 150px;
+    font-size: 80px;
+    margin-bottom: 100px;
 }
