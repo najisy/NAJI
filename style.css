@@ -355,10 +355,10 @@ body.dark-mode .nav-btn {
     text-decoration: none;
     text-align: right;
 
-    font-size: 19px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 700;
 
-    padding: 12px 15px;
+    padding: 80px 15px;
     margin: 0;
 
     border-radius: 10px;
@@ -377,7 +377,7 @@ body.dark-mode .nav-btn {
         width: 220px;
         right: -240px;
         height: calc(100vh - 85px);
-        padding: 5px 15px;
+        padding: 20px 12px;
     }
 
     .menu-content.show {
@@ -386,6 +386,53 @@ body.dark-mode .nav-btn {
 
     .menu-content a {
         font-size: 17px;
-        padding: 15px 5px;
+        padding: 110px 130px;
     }
+}
+/* الوضع الأسود */
+body.dark-mode {
+    background: #000;
+    color: #fff;
+}
+
+body.dark-mode .top-bar {
+    background: #000;
+}
+
+body.dark-mode .menu-content {
+    background: #000;
+}
+
+body.dark-mode .menu-content a,
+body.dark-mode .nav-btn,
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode span {
+    color: #fff;
+}
+
+/* الوضع الأبيض */
+body:not(.dark-mode) {
+    background: #fff;
+    color: #000;
+}
+
+body:not(.dark-mode) .top-bar {
+    background: #fff;
+}
+
+body:not(.dark-mode) .menu-content {
+    background: #fff;
+}
+
+body:not(.dark-mode) .menu-content a,
+body:not(.dark-mode) .nav-btn,
+body:not(.dark-mode) p,
+body:not(.dark-mode) h1,
+body:not(.dark-mode) h2,
+body:not(.dark-mode) h3,
+body:not(.dark-mode) span {
+    color: #000;
 }
