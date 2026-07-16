@@ -212,7 +212,6 @@ body {
     transform: rotateX(70deg) rotateZ(360deg);
   }
 }
-
 @keyframes darkSpinB {
   from {
     transform: rotateY(70deg) rotateZ(0deg);
