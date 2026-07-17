@@ -325,10 +325,10 @@ body.dark-mode .nav-btn {
     right: -500px;
     left: auto;
 
-    width: 280px;
+    width: 350px;
     height: calc(100vh - 100px);
 
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(249, 247, 247, 0.98);
     padding: 25px 15px;
 
     display: flex;
@@ -336,7 +336,7 @@ body.dark-mode .nav-btn {
     gap: 8px;
 
     box-sizing: border-box;
-    border-left: 1px solid #e5e5e5;
+    border-left: 1px solid #fbfafa;
     box-shadow: -8px 0 25px rgba(0, 0, 0, 0.10);
 
     overflow-y: auto;
@@ -355,10 +355,10 @@ body.dark-mode .nav-btn {
     text-decoration: none;
     text-align: right;
 
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
 
-    padding: 20px 15px;
+    padding: 40px 15px;
     margin: 0;
 
     border-radius: 10px;
@@ -424,7 +424,7 @@ body:not(.dark-mode) .top-bar {
 }
 
 body:not(.dark-mode) .menu-content {
-    background: #fff;
+    background: #e5e4e4;
 }
 
 body:not(.dark-mode) .menu-content a,
