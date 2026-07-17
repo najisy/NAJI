@@ -242,7 +242,7 @@ body {
 .top-icons {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 150px;
 }
 .nav-btn {
     background: transparent !important;
@@ -322,10 +322,10 @@ body.dark-mode .nav-btn {
 .menu-content {
     position: fixed;
     top: 100px;
-    right: -280px;
+    right: -500px;
     left: auto;
 
-    width: 250px;
+    width: 280px;
     height: calc(100vh - 100px);
 
     background: rgba(255, 255, 255, 0.98);
@@ -358,7 +358,7 @@ body.dark-mode .nav-btn {
     font-size: 40px;
     font-weight: 700;
 
-    padding: 80px 15px;
+    padding: 20px 15px;
     margin: 0;
 
     border-radius: 10px;
