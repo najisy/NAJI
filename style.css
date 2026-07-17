@@ -86,7 +86,7 @@ body {
 }
 .about h1 {
     font-size:100px;
-    text-align: right;
+    text-align: center;
     display: block;
     width: auto;
     padding-bottom: 10px;
@@ -485,14 +485,14 @@ body:not(.dark-mode) span {
 /* القمر */
 .theme-btn {
     position: absolute;
-    right: 350px;
+    right: 600px;
     top: 35px;
 }
 
 /* الحساب */
 .profile-btn {
     position: absolute;
-    right: 200px;
+    right: 300px;
     top: 35px;
 }
 
