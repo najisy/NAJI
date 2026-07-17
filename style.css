@@ -226,8 +226,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    background: #ffffff;
+    height: 120px;
+    background: #f8f6f6;
 
     display: flex;
     justify-content: space-between;
