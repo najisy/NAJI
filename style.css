@@ -331,7 +331,7 @@ body.dark-mode .nav-btn {
     width: 400px;
     height: calc(100vh - 100px);
 
-    background: #eeeeee !important;
+    background: rgb(249, 246, 246) !important;
     opacity: 1;
     backdrop-filter: none;
 
