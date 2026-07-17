@@ -86,7 +86,7 @@ body {
 }
 .about h1 {
     font-size:100px;
-    text-align: center;
+    text-align: right;
     display: block;
     width: auto;
     padding-bottom: 10px;
@@ -294,11 +294,13 @@ body.dark-mode .top-bar {
 body.dark-mode .nav-btn {
   color: white;
 }
+
 .search-box {
-    position: absolute;
-    top: 110px;
-    left: 25px;
-    width: 260px;
+    position: fixed;
+    top: 18px;
+    left: 65px;
+    width: 230px;
+    height: 64px;
     display: none;
     z-index: 10000;
 }
@@ -309,9 +311,10 @@ body.dark-mode .nav-btn {
 
 .search-box input {
     width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #f9f7f7;
-    border-radius: 10px;
+    height: 100%;
+    padding: 0 15px;
+    border: 1px solid #d5d5d5;
+    border-radius: 15px;
     outline: none;
     font-size: 16px;
     box-sizing: border-box;
