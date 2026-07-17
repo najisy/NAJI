@@ -9,15 +9,26 @@
 <body>
 <header class="top-bar">
 
-    <button id="menuBtn" class="menu-btn">☰</button>
+<button id="searchBtn" class="nav-btn">
+    <i class="fa-solid fa-magnifying-glass"></i>
+</button>
 
-    <button id="profileBtn" class="profile-btn">👤</button>
+<button id="themeBtn" class="nav-btn">
+    <i class="fa-regular fa-moon"></i>
+</button>
 
-    <button id="themeBtn" class="theme-btn">🌙</button>
+<button id="profileBtn" class="nav-btn">
+    <i class="fa-regular fa-user"></i>
+</button>
 
-    <button id="searchBtn" class="search-btn">🔍</button>
+<button id="menuBtn" class="nav-btn">
+    <i class="fa-solid fa-bars"></i>
+</button>
 
 </header>
+<div id="searchBox" class="search-box">
+    <input id="searchInput" type="text" placeholder="ابحث هنا...">
+</div>
 <div class="menu-content" id="menuContent">
     <a href="#news">الأخبار</a>
     <a href="#articles"> المقالات</a>
@@ -102,29 +113,51 @@
 <script>
   const themeBtn = document.getElementById("themeBtn");
 
-  themeBtn.addEventListener("click", function () {
+themeBtn.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 
     if (document.body.classList.contains("dark-mode")) {
-      themeBtn.textContent = "☀️";
+        themeBtn.innerHTML = '<i class="fa-regular fa-sun"></i>';
     } else {
-      themeBtn.textContent = "🌙";
+        themeBtn.innerHTML = '<i class="fa-regular fa-moon"></i>';
     }
-  });
-  const searchBtn = document.getElementById("searchBtn");
+});
+const searchBtn = document.getElementById("searchBtn");
 const searchBox = document.getElementById("searchBox");
+const searchInput = document.getElementById("searchInput");
+
 searchBtn.addEventListener("click", function () {
-  if (searchBox.style.display === "flex") {
-    searchBox.style.display = "none";
-  } else {
-    searchBox.style.display = "flex";
-  }
+    searchBox.classList.toggle("show");
+
+    if (searchBox.classList.contains("show")) {
+        searchInput.focus();
+    }
+});
+
+const profileBtn = document.getElementById("profileBtn");
+const aboutSection = document.getElementById("about");
+
+profileBtn.addEventListener("click", function () {
+    aboutSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 });
 const menuBtn = document.getElementById("menuBtn");
 const menuContent = document.getElementById("menuContent");
 
 menuBtn.addEventListener("click", function () {
     menuContent.classList.toggle("show");
+});
+</script>
+<script>
+const buttons = document.querySelectorAll(".nav-btn");
+
+buttons.forEach(btn=>{
+    btn.addEventListener("click",()=>{
+        buttons.forEach(b=>b.classList.remove("active"));
+        btn.classList.add("active");
+    });
 });
 </script>
 </body>
