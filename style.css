@@ -420,7 +420,7 @@ body:not(.dark-mode) span {
 .search-box {
     position: fixed;
     top: 40px;
-    left: 120px;
+    left: 100px;
     width: 350px;
     height: 64px;
     display: none;
@@ -451,13 +451,13 @@ body:not(.dark-mode) span {
 
 #themeBtn {
     position: absolute;
-    right: 300px;
+    right: 200px;
     top: 35px;
 }
 
 #profileBtn {
     position: absolute;
-    right: 540px;
+    right: 400px;
     top: 35px;
 }
 
