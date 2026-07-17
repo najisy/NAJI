@@ -419,9 +419,9 @@ body:not(.dark-mode) span {
 /* تكبير صندوق البحث */
 .search-box {
     position: fixed;
-    top: 30px;
-    left: 110px;
-    width: 300px;
+    top: 40px;
+    left: 120px;
+    width: 350px;
     height: 64px;
     display: none;
     z-index: 10000;
@@ -438,36 +438,34 @@ body:not(.dark-mode) span {
 }
 .top-bar {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+}
+#searchBtn {
+    position: absolute;
+    left: 20px;
+    top: 35px;
 }
 
-/* البحث */
-.search-btn {
+#themeBtn {
     position: absolute;
-    left: 200px;
-    top: 450px;
+    right: 300px;
+    top: 35px;
 }
 
-/* القمر */
-.theme-btn {
+#profileBtn {
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 540px;
+    top: 35px;
 }
 
-/* الحساب */
-.profile-btn {
+#menuBtn {
     position: absolute;
-    right: 250px;
-    top: 45px;
+    right: 20px;
+    top: 35px;
 }
-
-/* القائمة */
-.menu-btn {
-    position: absolute;
-    right: 400px;
-    top: 450px;
-}
-.top-btn,
 .nav-btn {
     background: transparent;
     border: none;
