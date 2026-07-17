@@ -505,3 +505,19 @@ body:not(.dark-mode) span {
     right: 40px;
     top: 45px;
 }
+.top-btn,
+.nav-btn {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #000;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.top-btn:hover,
+.nav-btn:hover {
+    transform: scale(1.1);
+}
