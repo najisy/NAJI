@@ -94,7 +94,7 @@ body {
 .about-line {
     width: 97%;
     border: none;
-    border-top: 5px solid #484747;
+    border-top: 5px solid #4a4949;
     margin: 20px 0 50px;
     position: relative;
 }
@@ -226,7 +226,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 180px;
+    height: 130px;
     background: #f8f6f6;
 
     display: flex;
@@ -278,11 +278,11 @@ body {
     scroll-margin-top: 110px;
 }
 body {
-  transition: background-color 0.4s, color 0.4s;
+  transition:  #111 und-color 0.4s, color 0.4s;
 }
 
 body.dark-mode {
-  background-color: #111;
+  background-color: #4b4b4b;
   color: white;
 }
 
@@ -331,7 +331,10 @@ body.dark-mode .nav-btn {
     width: 400px;
     height: calc(100vh - 100px);
 
-    background: rgba(240, 240, 244, 0.98);
+    background: #eeeeee !important;
+    opacity: 1;
+    backdrop-filter: none;
+
     padding: 25px 15px;
 
     display: flex;
@@ -365,12 +368,12 @@ body.dark-mode .nav-btn {
     margin: 0;
 
     border-radius: 10px;
-    transition: background 0.25s ease, transform 0.25s ease;
+    transition: background 0.25s ease, orm 0.25s ease;
 }
 
 .menu-content a:hover,
 .menu-content a:active {
-    background: #f2f2f2;
+    background: #f0eeee;
     transform: translateX(-4px);
 }
 
@@ -479,26 +482,26 @@ body:not(.dark-mode) span {
 .search-btn {
     position: absolute;
     left: 20px;
-    top: 35px;
+    top: 45px;
 }
 
 /* القمر */
 .theme-btn {
     position: absolute;
-    right: 600px;
-    top: 35px;
+    right: 500px;
+    top: 45px;
 }
 
 /* الحساب */
 .profile-btn {
     position: absolute;
-    right: 300px;
-    top: 35px;
+    right: 250px;
+    top: 45px;
 }
 
 /* القائمة */
 .menu-btn {
     position: absolute;
     right: 40px;
-    top: 35px;
+    top: 45px;
 }
