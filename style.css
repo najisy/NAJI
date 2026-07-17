@@ -439,3 +439,35 @@ body:not(.dark-mode) h3,
 body:not(.dark-mode) span {
     color: #000;
 }
+.top-icons {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 25px;
+}
+
+/* يدفع القمر والحساب إلى جهة اليمين */
+#themeBtn {
+    margin-left: auto;
+}
+
+/* تكبير صندوق البحث */
+.search-box {
+    position: fixed;
+    top: 18px;
+    left: 60px;
+    width: 300px;
+    height: 64px;
+    display: none;
+    z-index: 10000;
+}
+
+.search-box.show {
+    display: block;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
