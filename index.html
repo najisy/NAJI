@@ -112,65 +112,7 @@
 <footer class="footer">
     <p>© 2026 NAJI | جميع الحقوق محفوظة</p>
 </footer>
-<script>
-  const themeBtn = document.getElementById("themeBtn");
 
-themeBtn.addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
-    } else {
-        themeBtn.innerHTML = '<i class="fa-regular fa-moon"></i>';
-    }
-});
-const searchBtn = document.getElementById("searchBtn");
-const searchBox = document.getElementById("searchBox");
-const searchInput = document.getElementById("searchInput");
-
-searchBtn.addEventListener("click", function () {
-    searchBox.classList.toggle("show");
-
-    if (searchBox.classList.contains("show")) {
-        searchInput.focus();
-    }
-});
-
-const profileBtn = document.getElementById("profileBtn");
-const aboutSection = document.getElementById("about");
-
-profileBtn.addEventListener("click", function () {
-    aboutSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
-});
-</script>
-<script>
-const buttons = document.querySelectorAll(".nav-btn");
-
-buttons.forEach(btn=>{
-    btn.addEventListener("click",()=>{
-        buttons.forEach(b=>b.classList.remove("active"));
-        btn.classList.add("active");
-    });
-});
-// تحميل الوضع المحفوظ
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
-}
-
-// تبديل الوضع
-function toggleTheme() {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark");
-    } else {
-        localStorage.setItem("theme", "light");
-    }
-}
-</script>
 <script src="script.js"></script>
 </body>
 </html>
