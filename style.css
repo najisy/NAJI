@@ -563,3 +563,12 @@ body,
 .top-bar {
     z-index: 10003;
 }
+.nav-btn,
+.nav-btn i{
+    color: #000 !important;
+}
+
+body.dark-mode .nav-btn,
+body.dark-mode .nav-btn i{
+    color: #fff !important;
+}
