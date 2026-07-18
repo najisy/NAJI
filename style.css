@@ -293,7 +293,7 @@ body.dark-mode .nav-btn {
     width: 400px;
     height: calc(100vh - 100px);
 
-    background: rgb(249, 246, 246) !important;
+    background: rgb(255, 255, 255) !important;
     opacity: 1;
     backdrop-filter: none;
 
@@ -335,7 +335,7 @@ body.dark-mode .nav-btn {
 
 .menu-content a:hover,
 .menu-content a:active {
-    background: #f0eeee;
+    background: #efefef;
     transform: translateX(-4px);
 }
 
@@ -398,7 +398,7 @@ body:not(.dark-mode) .top-bar {
 }
 
 body:not(.dark-mode) .menu-content {
-    background: #e5e4e4;
+    background: #ffffff;
 }
 
 body:not(.dark-mode) .menu-content a,
@@ -570,5 +570,18 @@ body,
 
 body.dark-mode .nav-btn,
 body.dark-mode .nav-btn i{
+    color: #fff !important;
+}
+#themeBtn {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#themeBtn i {
+    color: #000 !important;
+}
+
+body.dark-mode #themeBtn i {
     color: #fff !important;
 }
