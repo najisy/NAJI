@@ -386,7 +386,13 @@ body:not(.dark-mode) {
     background: #fff;
     color: #000;
 }
+body.dark-mode .menu-content {
+    background: #000 !important;
+}
 
+body.dark-mode .menu-content a {
+    color: #fff !important;
+}
 body:not(.dark-mode) .top-bar {
     background: #fff;
 }
@@ -516,4 +522,44 @@ body:not(.dark-mode) span {
 
 .search-box input:focus {
     border-color: #777777;
+}
+body,
+.top-bar,
+.menu-content,
+.menu-content a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.menu-content {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100vh;
+    z-index: 10001;
+    transition: right 0.35s ease;
+    overflow-y: auto;
+}
+
+.menu-content.open {
+    right: 0;
+}
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+}
+
+.menu-overlay.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.top-bar {
+    z-index: 10003;
 }
