@@ -92,45 +92,22 @@ document.addEventListener("click", function (event) {
     }
 });
 
+// تحديد جميع نتائج البحث داخل الصفحة
+const pageContent = document.querySelector(".content");
+const marker = new Mark(pageContent);
 
-// البحث الحقيقي داخل محتوى الصفحة
-searchInput.addEventListener("keydown", function (event) {
-    if (event.key !== "Enter") return;
+searchInput.addEventListener("input", function () {
+    const searchText = searchInput.value.trim();
 
-    const searchText = searchInput.value.trim().toLowerCase();
-
-    if (searchText === "") return;
-
-    const elements = document.querySelectorAll(
-        ".content h1, .content h2, .content h3, .content p, .content a"
-    );
-
-    let foundElement = null;
-
-    elements.forEach(function (element) {
-        element.classList.remove("search-result");
-
-        const elementText = element.textContent.trim().toLowerCase();
-
-        if (!foundElement && elementText.includes(searchText)) {
-            foundElement = element;
+    // إزالة التحديد القديم
+    marker.unmark({
+        done: function () {
+            if (searchText !== "") {
+                marker.mark(searchText, {
+                    separateWordSearch: false,
+                    acrossElements: true
+                });
+            }
         }
     });
-
-    if (foundElement) {
-        foundElement.scrollIntoView({
-            behavior: "smooth",
-            block: "center"
-        });
-
-        foundElement.classList.add("search-result");
-
-        searchBox.classList.remove("show");
-
-        setTimeout(function () {
-            foundElement.classList.remove("search-result");
-        }, 3000);
-    } else {
-        alert("لم يتم العثور على نتيجة");
-    }
 });

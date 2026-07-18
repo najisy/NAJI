@@ -428,7 +428,7 @@ body:not(.dark-mode) span {
     top: 40px;
     left: 18%;
     transform: translateX(-50%);
-    width: 300px;
+    width: 250px;
     height: 60px;
     display: none;
     z-index: 999999;
@@ -596,8 +596,9 @@ body.dark-mode #themeBtn i {
 .nav-btn i {
     background: transparent !important;
 }
-.search-result {
-    outline: 2px solid #00bfff;
-    outline-offset: 8px;
-    border-radius: 6px;
+mark {
+    background-color: #2878d4;
+    color: white;
+    padding: 0 2px;
+    border-radius: 2px;
 }
