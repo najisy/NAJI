@@ -425,11 +425,11 @@ body:not(.dark-mode) span {
 /* تكبير صندوق البحث */
 .search-box {
     position: fixed;
-    top: 40px;
-    left: 18%;
+    top: 45px;
+    left: 30%;
     transform: translateX(-50%);
     width: 250px;
-    height: 60px;
+    height: 50px;
     display: none;
     z-index: 999999;
 }
