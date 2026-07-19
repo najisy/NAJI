@@ -426,7 +426,7 @@ body:not(.dark-mode) span {
 .search-box {
     position: fixed;
     top: 45px;
-    left: 23%;
+    left: 21%;
     transform: translateX(-50%);
     width: 250px;
     height: 50px;
